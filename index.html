@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marlleto-RECREATED-layout</title>
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- icons from font awesome -->
     <script
       src="https://kit.fontawesome.com/460b41b87d.js"
@@ -14,29 +14,39 @@
 
   <body>
     <header>
-      <nav class="top-nav">
+      <div></div>
+      <nav class="top-navigation-only">
         <!-- logo -->
         <img class="logo" src="img/Property 1=start.png" alt="logo" />
+
         <!-- first navigation -->
         <ul class="top-nav-ul">
-          <li class="nav-li">Live</li>
-          <li class="nav-li">Push</li>
-          <li class="nav-li">Note</li>
-          <li class="nav-li">Link</li>
-          <li class="nav-li">Shop</li>
-          <li class="nav-li">Packs</li>
-          <li class="nav-li">Help</li>
-          <li class="nav-li">More <strong>+</strong></li>
+          <li class="nav-list li-live">Live</li>
+          <li class="nav-list">Push</li>
+          <li class="nav-list">Note</li>
+          <li class="nav-list">Link</li>
+          <li class="nav-list">Shop</li>
+          <li class="nav-list">Packs</li>
+          <li class="nav-list">Help</li>
+          <li class="nav-list" id="nav-li-more-plus">
+            More <strong>+</strong>
+          </li>
         </ul>
-        <a class="nav-a" id="nav-a-try-live" href="#">Try Lie for free</a>
-        <a class="nav-a" id="nav-a-log-in" href="#"> Log in or register</a>
+        <div class="navigation-a">
+          <a class="nav-a" id="nav-a-1" href="#">Try Lie for free</a>
+          <a class="nav-a" id="nav-a-2" href="#"> Log in or register</a>
+        </div>
       </nav>
       <!-- second navigation +sticky slider -->
-      <nav class="slide-sticky-nav">
-        <ul class="slide-sticky-nav-ul">
-          <li class="li-slide-s-nav">About</li>
-          <li class="li-slide-s-nav">Jobs</li>
-          <li class="li-slide-s-nav">Apprenticeships</li>
+
+      <hr class="navigation-hr" />
+      <nav class="bottom-navigation-only">
+        <ul class="bottom-nav-ul">
+          <li class="bottom-li-nav" id="bottom-li-nav-about">About</li>
+          <li class="bottom-li-nav" id="bottom-li-nav-jobs">Jobs</li>
+          <li class="bottom-li-nav" id="bottom-li-nav-appren">
+            Apprenticeships
+          </li>
         </ul>
       </nav>
     </header>
@@ -44,20 +54,20 @@
       <!-- zero section photo  -->
       <div class="zero-section-photo-">
         <img
-          class="photo-1 imag"
-          src="/img/pexels-brett-sayles-3889053.jpg"
-          alt="musican-creating-new-music"
+          class="photo-1"
+          src="/img/pexels-tima-miroshnichenko-4988139.jpg"
+          alt="producer-creating-new-music"
         />
-        <!-- Zdjęcie dodane przez Brett Sayles: https://www.pexels.com/pl-pl/zdjecie/muzyk-za-pomoca-laptopa-podczas-pracy-nad-melodia-3889053/ -->
       </div>
 
       <!-- first section text -->
 
       <div class="first-section-text">
         <h1 class="first-text-h1">
-          We make Live, Push and Link — unique software and hardware for music
-          creation and performance. With these products, our community of users
-          creates amazing things.
+          We make <a class="first-text-a">Live</a>,
+          <a class="first-text-a">Push</a> and <a class="first-text-a">Link</a>—
+          unique software and hardware for music creation and performance. With
+          these products, our community of users creates amazing things.
         </h1>
         <p class="first-text-p">
           Ableton was founded in 1999 and released the first version of Live in
@@ -68,36 +78,35 @@
       <!-- second section photo -->
 
       <div class="second-section-photo">
-        <div class="first-colored-box">
-          <img
-            class="right-photo-2 imag"
-            src="img/pexels-brett-sayles-3990847.jpg"
-            alt="music-studio-with-someone"
-          />
-          <!-- Zdjęcie dodane przez Brett Sayles: https://www.pexels.com/pl-pl/zdjecie/mezczyzna-w-studio-nagran-3990847/ -->
-        </div>
         <img
-          class="left-photo-3 imag"
+          class="left-photo-3"
           src="img/pexels-roberto-nickson-7238759.jpg"
           alt="modern-music-studio"
         />
+        <div class="first-colored-box">
+          <img
+            class="right-photo-2"
+            src="img/pexels-brett-sayles-3990847.jpg"
+            alt="music-studio-with-someone"
+          />
+        </div>
       </div>
-      <!-- second section text  -->
+      <!-- third section text  -->
 
-      <div class="second-section-text">
-        <h2 class="second-text-h2">
+      <div class="third-section-text">
+        <h2 class="third-text-h2">
           Making music isn't easy. It takes time, effort, and learning. But when
           you're in the flow, it's incredibly rewarding.
         </h2>
-        <p class="second-text-p">
+        <p class="third-text-p">
           We feel the same way about making Ableton products. The driving force
           behind Ableton is our passion for what we make, and the people we make
           it for.
         </p>
       </div>
 
-      <!-- third section - video -->
-      <div class="third-section-video">
+      <!-- fourth section - video -->
+      <div class="fourth-section-video">
         <iframe
           width="560"
           height="315"
@@ -112,14 +121,14 @@
         </figcaption>
       </div>
 
-      <!-- fourth section text -->
-      <div class="fourth-section-text">
-        <h3 class="fourth-text-h3">
+      <!-- fifth section text -->
+      <div class="fifth-section-text">
+        <h3 class="fifth-text-h3">
           We are more than 350 people from 30 different countries divided
           between our headquarters in Berlin and our offices in Los Angeles and
           Tokyo.
         </h3>
-        <p class="fourth-text-p">
+        <p class="fifth-text-p">
           Most of us are active musicians, producers, and DJs, and many of us
           use Live and Push every day. We come from a wide range of cultural and
           professional backgrounds. Some of us have PhDs, some are self-taught,
@@ -129,8 +138,8 @@
           culture.
         </p>
       </div>
-      <!-- fifth section photo -->
-      <div class="fifth-section-photo">
+      <!-- sixth section photo -->
+      <div class="sixth-section-photo">
         <div class="second-colored-box">
           <img
             class="left-top-photo-4 imag"
@@ -151,13 +160,13 @@
         />
       </div>
 
-      <!-- sixth section text -->
-      <div class="sixth-section-text">
-        <h4 class="sixth-text-h4">
+      <!-- seventh section text -->
+      <div class="seventh-section-text">
+        <h4 class="seventh-text-h4">
           We believe it takes focus to create truly outstanding instruments. We
           only work on a few products and we strive to make them great.
         </h4>
-        <p class="sixth-text-p">
+        <p class="seventh-text-p">
           Rather than having a one-size-fits-all process, we try to give our
           people what they need to work their magic and grow. We've learned that
           achieving the best results comes from building teams that are richly
@@ -167,8 +176,8 @@
         </p>
       </div>
 
-      <!-- seventh section photo  -->
-      <div class="seventh-section-photo-">
+      <!-- eighth section photo  -->
+      <div class="eighth-section-photo-">
         <img
           class="photo-1 imag"
           src="/img/pexels-brett-sayles-3889053.jpg"
@@ -177,18 +186,18 @@
         <!-- Zdjęcie dodane przez Brett Sayles: https://www.pexels.com/pl-pl/zdjecie/muzyk-za-pomoca-laptopa-podczas-pracy-nad-melodia-3889053/ -->
       </div>
 
-      <!-- eighth section text -->
-      <div class="eighth-section-text">
-        <h5 class="eighth-text-h5">
+      <!-- nineth section text -->
+      <div class="nineth-section-text">
+        <h5 class="nineth-text-h5">
           We're passionate about what we do, but we're equally passionate about
           improving who we are.
         </h5>
-        <p class="eighth-text-p-top">
+        <p class="nineth-text-p-top">
           We work hard to foster an environment where people can grow both
           personally and professionally, and we strive to create a wealth of
           opportunities to learn from and with each other.
         </p>
-        <p class="eighth-text-p-bottom">
+        <p class="nineth-text-p-bottom">
           Alongside an internal training program, employees are actively
           supported in acquiring new knowledge and skills, and coached on
           applying these in their daily work. In addition, staff-organized
@@ -196,8 +205,8 @@
           production techniques and best practices.
         </p>
 
-        <!-- nineth section text -->
-        <div class="nineth-section-photo">
+        <!-- tenth section text -->
+        <div class="tenth-section-photo">
           <div class="third-colored-box"></div>
           <img
             class="left-top-photo-4 imag"
@@ -212,14 +221,14 @@
           />
         </div>
 
-        <!-- tenth section text -->
-        <div class="tenth-section-text">
-          <h6 class="tenth-text-h6">
+        <!-- eleventh section text -->
+        <div class="eleventh-section-text">
+          <h6 class="eleventh-text-h6">
             We want our employees to love it here. Since we're looking for
             exceptional talent from around the world, we will do everything we
             can to make your transition as easy as possible.
           </h6>
-          <p class="tenth-text-p">
+          <p class="eleventh-text-p">
             If you're joining us in Berlin, we'll help with relocation and
             paperwork. We'll even provide you with free German or English
             lessons. Plus, working in Germany means you can expect comprehensive
@@ -230,11 +239,11 @@
             activities.
           </p>
         </div>
-        <!-- eleventh section text -->
-        <div class="eleventh-section-text">
+        <!-- twelveth section text -->
+        <div class="twelveth-section-text">
           <div class="top-photo"></div>
           <div class="bottom-text">
-            <h7 class="eleventh-text-h7"
+            <h7 class="twelveth-text-h7"
               >We're really proud of the work we've done so far. But there's so
               much more to come. If you'd like to be a part of it, please join
               us.</h7
@@ -350,3 +359,4 @@
 <!-- Zdjęcie dodane przez Tima Miroshnichenko: https://www.pexels.com/pl-pl/zdjecie/mezczyzna-technologia-muzyka-wystawa-4988139/ -->
 <!-- Zdjęcie dodane przez Anna Pou : https://www.pexels.com/pl-pl/zdjecie/mezczyzna-muzyka-muzyk-studio-8132977/ -->
 <!-- Zdjęcie dodane przez Christina Morillo: https://www.pexels.com/pl-pl/zdjecie/dwie-kobiety-przed-tablica-suchoscieralna-1181533/ -->
+<!-- Zdjęcie dodane przez Brett Sayles: https://www.pexels.com/pl-pl/zdjecie/mezczyzna-w-studio-nagran-3990847/ -->
