@@ -1,10 +1,11 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap");
 
-/* colors variety */
 * {
     margin: 0;
 }
+/* colors variety */
+
 $green-400: #85ab7b;
 $green-addictional-50: #f3f7f2;
 $green-addictional-800: #2f522a;
@@ -343,7 +344,7 @@ main {
         height: 22rem;
         border-radius: 0.1rem;
         box-shadow: 0.08rem 0.08rem 0.1rem rgba($color: $box-pink-600, $alpha: 0.2);
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
     .right-photo-8 {
         position: relative;
@@ -351,12 +352,79 @@ main {
         height: 34rem;
         border-radius: 0.1rem;
         box-shadow: 0.08rem 0.08rem 0.1rem rgba($color: $box-pink-600, $alpha: 0.2);
+        margin-right: 2rem;
+        margin-left: 15rem;
+    }
+    /* eleventh section text */
+    .eleventh-section-text {
+        align-self: center;
         margin-left: 20rem;
+        margin-right: 20rem;
+        margin-bottom: 8rem;
+    }
+    .eleventh-text-h6 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .eleventh-text-p {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* twelvth section text-photo*/
+    .twelveth-section-text-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-white;
+        width: 100%;
+        height: 35rem;
+        margin-bottom: 7rem;
+    }
+    .left-side {
+        align-self: center;
+        width: 40%;
+        height: 100%;
+    }
+    .photo-9 {
+        width: 100%;
+        height: 100%;
+    }
+    .fourth-colored-box {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        background-color: $box-violet-300;
+    }
+    .text-inside {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 5rem;
+    }
+    .see-jobs-a {
+        color: $box-pink-600;
+        position: absolute;
+        text-decoration: none;
+        margin-top: 1.5rem;
+        transition: linear 0.3s;
+
+        &:hover {
+            color: $blue-ocean-500;
+        }
+    }
+    .fa-solid {
+        padding-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .after-main-hr {
+        width: 100%;
+        height: 0.4%;
+        background-color: $font-primary-black;
+        opacity: 0.2;
     }
 }
-
-/* testing */
-.imag {
-    width: 200px;
-    height: 200px;
-}
+/* footer */
