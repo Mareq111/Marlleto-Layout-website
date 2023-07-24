@@ -439,6 +439,31 @@ main .after-main-hr {
 .top-footer .ft-6 {
   grid-row: 3;
 }
+.top-footer .ft-4 {
+  display: flex;
+  flex-direction: column;
+}
+.top-footer .ft-4-inside {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+.top-footer #location-chooser,
+.top-footer #language-chooser {
+  border: 0;
+  outline: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+  background-color: #dedbdb;
+  cursor: pointer;
+}
+.top-footer #language-chooser {
+  width: 7rem;
+}
+.top-footer #location-chooser {
+  width: 10rem;
+}
 .top-footer .ft-5-p {
   width: 27rem;
 }
@@ -492,7 +517,7 @@ main .after-main-hr {
   cursor: pointer;
 }
 .top-footer .fa-square-youtube {
-  color: #d5b3b3;
+  color: #bb0000;
   cursor: pointer;
 }
 .top-footer .fa-square-instagram {
