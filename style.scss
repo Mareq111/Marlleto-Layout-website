@@ -99,7 +99,7 @@ header {
 
   /* line betweeen navigations */
   .navigation-hr {
-    width: 100%;
+    width: 100vw;
     height: 0.4%;
     background-color: $font-primary-black;
     opacity: 0.2;
@@ -118,10 +118,13 @@ header {
     flex-direction: row;
     list-style: none;
     font-size: 0.9rem;
+    padding: 0 1.5rem;
+    width: 100vw;
+    height: auto;
   }
 
   .bottom-li-nav {
-    padding: 1rem;
+    margin: 1rem;
     gap: 1.5rem;
   }
 
@@ -137,31 +140,34 @@ header {
 }
 
 /* main */
-
-/* zero section photo */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 
-  /* .zero-section-photo {
-    display: ;
-} */
+  .zero-section-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
   .photo-1 {
-    width: 70rem;
-    height: 40rem;
-    margin-bottom: 7rem;
+    align-self: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 10% 3rem 10%;
+    height: auto;
     border-radius: 0.1rem;
-    box-shadow: 0.05rem 0.05rem 0.1rem
-      rgba($color: $font-primary-black, $alpha: 0.5);
+    box-shadow: 0.05rem 0.05rem 0.1rem rgba($color: $font-primary-black, $alpha: 0.5);
   }
 
   /* first section text  */
   .first-section-text {
-    align-self: center;
-    margin-left: 22rem;
-    margin-right: 22rem;
+    width: 50%;
+    margin: 0 25%;
+    flex-wrap: wrap;
   }
 
   .first-text-h1 {
@@ -182,49 +188,48 @@ main {
   .second-section-photo {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     background-color: $background-white;
     width: 100vw;
     height: 50rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin: 7rem;
   }
 
   .first-colored-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 100%;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 90%;
     background-color: $green-400;
     border-radius: 0.1rem;
   }
 
   .right-photo-2 {
-    width: 30rem;
-    height: 24rem;
-    margin-left: 7rem;
+    width: 40vw;
+    height: auto;
+    min-height: 8rem;
+    padding: 0 2rem 0 0;
     border-radius: 0.1rem;
-    box-shadow: 0.05rem 0.05rem 0.1rem
-      rgba($color: $green-addictional-800, $alpha: 0.5);
+    /*  box-shadow: 0.05rem 0.05rem 0.1rem rgba($color: $green-addictional-800, $alpha: 0.5); */
   }
 
   .left-photo-3 {
     position: absolute;
-    width: 35rem;
-    height: 35rem;
-    margin-right: 45rem;
+    width: 40vw;
+    min-width: 12rem;
+    min-height: 12rem;
+    height: auto;
+    margin-right: 50%;
     border-radius: 0.1rem;
-
-    box-shadow: 0.08rem 0.08rem 0.1rem
-      rgba($color: $green-addictional-800, $alpha: 0.7);
+    box-shadow: 0.08rem 0.08rem 0.1rem rgba($color: $green-addictional-800, $alpha: 0.7);
   }
 
   /* thrid section text */
   .third-section-text {
-    align-self: center;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    width: 50%;
+    margin: 0 25%;
+    flex-wrap: wrap;
   }
 
   .third-text-h2 {
@@ -239,22 +244,26 @@ main {
   }
 
   /* fourth section video */
+  .fourth-section-video {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 7rem;
+  }
   .video {
-    width: 45rem;
-    height: 24rem;
+    width: 80vw;
+    height: auto;
+    min-height: 22rem;
+    margin: 0 10%;
   }
 
   .fig-text {
     font-size: 0.8rem;
-    margin-bottom: 7rem;
-    margin-left: 0.5rem;
+    margin: 0 10%;
   }
-
   /* fifth section text */
   .fifth-section-text {
-    align-self: center;
-    margin-left: 21rem;
-    margin-right: 21rem;
+    width: 50%;
+    margin: 0 25%;
   }
 
   .fifth-text-h3 {
@@ -340,8 +349,7 @@ main {
     height: 40rem;
     margin-bottom: 7rem;
     border-radius: 0.1rem;
-    box-shadow: 0.05rem 0.05rem 0.1rem
-      rgba($color: $font-primary-black, $alpha: 0.5);
+    box-shadow: 0.05rem 0.05rem 0.1rem rgba($color: $font-primary-black, $alpha: 0.5);
   }
 
   /* nineth section text */
@@ -686,5 +694,44 @@ main {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+  }
+}
+/* media quieres  576px*/
+@media screen and (max-width: 576px) {
+  /* top navigation */
+  .nav-list {
+    display: none;
+  }
+  .hamburger-menu {
+    position: absolute;
+    margin: 6rem;
+  }
+  .menu {
+    font-size: 1.1rem;
+  }
+  .fa-caret-down {
+    padding-left: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    margin-left: 1.5rem;
+  }
+  .bottom-nav-ul {
+    padding: 0 1.5rem;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* second photos */
+  .second-section-photo {
+    max-height: 25rem;
+  }
+  .right-photo-2 {
+    padding: 1rem;
+  }
+  .left-photo-3 {
+    max-height: 8rem;
   }
 }
