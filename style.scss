@@ -106,6 +106,52 @@ header {
     opacity: 0.2;
   }
 
+  /* toggle menu for smaller screens */
+  .toggle-menu {
+    display: none;
+    position: absolute;
+    transform: translateY(52%);
+    width: 100vw;
+    height: 80rem;
+    background-color: $blue-ocean-700;
+    color: $green-addictional-50;
+    font-size: 0.9rem;
+    z-index: 2;
+    transition: ease-in 2s;
+  }
+  .toggle-a {
+    font-size: 1.2rem;
+    color: $green-addictional-50;
+    text-decoration: none;
+  }
+  .toggle-column {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .toggle-h {
+    font-size: 1.1rem;
+    margin: 0 10%;
+    margin-bottom: 0.5rem;
+  }
+  .toggle-p {
+    margin: 0 10%;
+  }
+  .toggle-li {
+    height: auto;
+    width: 15rem;
+  }
+  .toggle-row-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    height: auto;
+    list-style: none;
+  }
+
   /* bottom navigation */
   .bottom-navigation-only {
     height: 49.8%;
@@ -217,7 +263,7 @@ main {
   .left-photo-3 {
     position: absolute;
     width: 40vw;
-    /* min-width: 12rem; */
+    z-index: 1;
     min-height: 15rem;
     height: auto;
     margin-right: 50%;
@@ -247,10 +293,11 @@ main {
   .fourth-section-video {
     width: 100vw;
     height: auto;
+    min-height: 22rem;
     margin-bottom: 7rem;
   }
   .video {
-    width: 80vw;
+    width: 80%;
     height: auto;
     min-height: 22rem;
     margin: 0 10%;
@@ -436,7 +483,7 @@ main {
     width: 50%;
     margin: 0 25%;
     flex-wrap: wrap;
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
   }
 
   .eleventh-text-h6 {
@@ -496,10 +543,9 @@ main {
 
   .see-jobs-a {
     align-self: flex-start;
-    color: $box-pink-600;
+    color: $blue-ocean-700;
     text-decoration: none;
     transition: linear 0.3s;
-
     &:hover {
       color: $blue-ocean-500;
     }
@@ -725,6 +771,7 @@ main {
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
+    cursor: pointer;
   }
   .menu {
     font-size: 1.1rem;
@@ -732,7 +779,13 @@ main {
   .fa-caret-down {
     padding-left: 0.3rem;
     font-size: 0.9rem;
+    transition: ease 0s;
   }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
+  }
+
   .logo {
     margin-left: 1.5rem;
   }
@@ -852,6 +905,7 @@ main {
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
+    cursor: pointer;
   }
   .menu {
     font-size: 1.1rem;
@@ -859,6 +913,11 @@ main {
   .fa-caret-down {
     padding-left: 0.3rem;
     font-size: 0.9rem;
+    transition: ease 0s;
+  }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
   }
 
   .nav-a {
@@ -870,7 +929,7 @@ main {
     max-height: 30rem;
   }
   .left-photo-3 {
-    min-height: 20rem;
+    min-height: 25rem;
     min-width: 50vw;
   }
   .top-footer {
@@ -911,6 +970,106 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
 
+    flex-direction: column;
+  }
+  .bottom-left-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+  }
+  .bottom-right-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  .p-elements-right-ft {
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 15rem;
+  }
+  #p-2-footer {
+    align-self: flex-start;
+    padding: 0.5rem 0;
+  }
+  .logo-bottom {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-list {
+    display: none;
+  }
+  .hamburger-menu {
+    position: absolute;
+    margin: 6rem;
+    cursor: pointer;
+  }
+  .menu {
+    font-size: 1.1rem;
+  }
+  .fa-caret-down {
+    padding-left: 0.3rem;
+    font-size: 0.9rem;
+    transition: ease 0s;
+  }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
+  }
+
+  .nav-a {
+    display: none;
+  }
+
+  .left-photo-3 {
+    min-height: 20rem;
+    min-width: 50vw;
+  }
+  .video {
+    min-height: 32rem;
+  }
+  .top-footer {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 3rem 10%;
+    max-width: 100%;
+  }
+  .sign-up-input {
+    max-width: 30rem;
+  }
+  .sign-up-btn {
+    max-width: 10rem;
+  }
+  /* sign up */
+  .ft-5 {
+    order: 1;
+  }
+  /* socials */
+  .ft-1 {
+    order: 2;
+  }
+  /* education */
+  .ft-3 {
+    order: 3;
+  }
+  /* commiunity */
+  .ft-2 {
+    order: 4;
+  }
+  /* language */
+  .ft-4 {
+    order: 5;
+  }
+  .bottom-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
   }
   .bottom-left-footer {

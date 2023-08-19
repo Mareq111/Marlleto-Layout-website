@@ -20,6 +20,7 @@ header {
   font-weight: 500;
   /* top-navigation */
   /* line betweeen navigations */
+  /* toggle menu for smaller screens */
   /* bottom navigation */
 }
 header .top-navigation-only {
@@ -80,6 +81,50 @@ header .navigation-hr {
   height: 0.4%;
   background-color: #333234;
   opacity: 0.2;
+}
+header .toggle-menu {
+  display: none;
+  position: absolute;
+  transform: translateY(52%);
+  width: 100vw;
+  height: 80rem;
+  background-color: #1a686b;
+  color: #f3f7f2;
+  font-size: 0.9rem;
+  z-index: 2;
+  transition: ease-in 2s;
+}
+header .toggle-a {
+  font-size: 1.2rem;
+  color: #f3f7f2;
+  text-decoration: none;
+}
+header .toggle-column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+header .toggle-h {
+  font-size: 1.1rem;
+  margin: 0 10%;
+  margin-bottom: 0.5rem;
+}
+header .toggle-p {
+  margin: 0 10%;
+}
+header .toggle-li {
+  height: auto;
+  width: 15rem;
+}
+header .toggle-row-ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  height: auto;
+  list-style: none;
 }
 header .bottom-navigation-only {
   height: 49.8%;
@@ -188,7 +233,7 @@ main .right-photo-2 {
 main .left-photo-3 {
   position: absolute;
   width: 40vw;
-  /* min-width: 12rem; */
+  z-index: 1;
   min-height: 15rem;
   height: auto;
   margin-right: 50%;
@@ -212,10 +257,11 @@ main .third-text-p {
 main .fourth-section-video {
   width: 100vw;
   height: auto;
+  min-height: 22rem;
   margin-bottom: 7rem;
 }
 main .video {
-  width: 80vw;
+  width: 80%;
   height: auto;
   min-height: 22rem;
   margin: 0 10%;
@@ -375,7 +421,7 @@ main .eleventh-section-text {
   width: 50%;
   margin: 0 25%;
   flex-wrap: wrap;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 }
 main .eleventh-text-h6 {
   font-size: 1.6rem;
@@ -427,7 +473,7 @@ main .text-inside {
 }
 main .see-jobs-a {
   align-self: flex-start;
-  color: #da287c;
+  color: #1a686b;
   text-decoration: none;
   transition: linear 0.3s;
 }
@@ -626,6 +672,7 @@ main .after-main-hr {
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
+    cursor: pointer;
   }
   .menu {
     font-size: 1.1rem;
@@ -633,6 +680,11 @@ main .after-main-hr {
   .fa-caret-down {
     padding-left: 0.3rem;
     font-size: 0.9rem;
+    transition: ease 0s;
+  }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
   }
   .logo {
     margin-left: 1.5rem;
@@ -752,6 +804,7 @@ main .after-main-hr {
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
+    cursor: pointer;
   }
   .menu {
     font-size: 1.1rem;
@@ -759,6 +812,11 @@ main .after-main-hr {
   .fa-caret-down {
     padding-left: 0.3rem;
     font-size: 0.9rem;
+    transition: ease 0s;
+  }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
   }
   .nav-a {
     display: none;
@@ -768,7 +826,7 @@ main .after-main-hr {
     max-height: 30rem;
   }
   .left-photo-3 {
-    min-height: 20rem;
+    min-height: 25rem;
     min-width: 50vw;
   }
   .top-footer {
@@ -777,6 +835,104 @@ main .after-main-hr {
     align-items: left;
     flex-direction: column;
     margin: 3rem 10%;
+  }
+  .sign-up-input {
+    max-width: 30rem;
+  }
+  .sign-up-btn {
+    max-width: 10rem;
+  }
+  /* sign up */
+  .ft-5 {
+    order: 1;
+  }
+  /* socials */
+  .ft-1 {
+    order: 2;
+  }
+  /* education */
+  .ft-3 {
+    order: 3;
+  }
+  /* commiunity */
+  .ft-2 {
+    order: 4;
+  }
+  /* language */
+  .ft-4 {
+    order: 5;
+  }
+  .bottom-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .bottom-left-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+  }
+  .bottom-right-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  .p-elements-right-ft {
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 15rem;
+  }
+  #p-2-footer {
+    align-self: flex-start;
+    padding: 0.5rem 0;
+  }
+  .logo-bottom {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-list {
+    display: none;
+  }
+  .hamburger-menu {
+    position: absolute;
+    margin: 6rem;
+    cursor: pointer;
+  }
+  .menu {
+    font-size: 1.1rem;
+  }
+  .fa-caret-down {
+    padding-left: 0.3rem;
+    font-size: 0.9rem;
+    transition: ease 0s;
+  }
+  .click-rotate {
+    padding-right: 0.3rem;
+    transform: rotate(-180deg);
+  }
+  .nav-a {
+    display: none;
+  }
+  .left-photo-3 {
+    min-height: 20rem;
+    min-width: 50vw;
+  }
+  .video {
+    min-height: 32rem;
+  }
+  .top-footer {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 3rem 10%;
+    max-width: 100%;
   }
   .sign-up-input {
     max-width: 30rem;
