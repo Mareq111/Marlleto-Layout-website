@@ -2,14 +2,14 @@
 
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const toggleMenu = document.querySelector(".toggle-menu");
-const caretIcon = document.querySelector(".fa-caret-down");
+const caretIcon = document.querySelector(".fa-caret-up");
 
 hamburgerMenu?.addEventListener("click", function () {
-  if (toggleMenu.style.display === "block") {
+  if (toggleMenu.style.display == "block") {
     toggleMenu.style.display = "none";
     caretIcon.classList.remove("click-rotate");
   } else {
     toggleMenu.style.display = "block";
-    caretIcon.classList.toggle("click-rotate");
   }
+  caretIcon.classList.toggle("click-rotate");
 });

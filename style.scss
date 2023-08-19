@@ -776,14 +776,14 @@ main {
   .menu {
     font-size: 1.1rem;
   }
-  .fa-caret-down {
+  .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
     transition: ease 0s;
-  }
-  .click-rotate {
-    padding-right: 0.3rem;
-    transform: rotate(-180deg);
+    &.click-rotate {
+      padding-right: 0.3rem;
+      transform: rotate(180deg);
+    }
   }
 
   .logo {
@@ -910,14 +910,14 @@ main {
   .menu {
     font-size: 1.1rem;
   }
-  .fa-caret-down {
+  .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
     transition: ease 0s;
-  }
-  .click-rotate {
-    padding-right: 0.3rem;
-    transform: rotate(-180deg);
+    &.click-rotate {
+      padding-right: 0.3rem;
+      transform: rotate(180deg);
+    }
   }
 
   .nav-a {
@@ -1011,16 +1011,16 @@ main {
   .menu {
     font-size: 1.1rem;
   }
-  .fa-caret-down {
+  .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
     transition: ease 0s;
-  }
-  .click-rotate {
-    padding-right: 0.3rem;
-    transform: rotate(-180deg);
-  }
 
+    &.click-rotate {
+      padding-right: 0.3rem;
+      transform: rotate(180deg);
+    }
+  }
   .nav-a {
     display: none;
   }
