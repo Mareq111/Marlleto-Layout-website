@@ -45,8 +45,6 @@ header .top-nav-ul {
   align-items: center;
   flex-direction: row;
   gap: 1.5rem;
-  margin-left: 1rem;
-  margin-right: 30rem;
   margin-left: 0;
 }
 header .nav-list {
@@ -61,6 +59,7 @@ header .navigation-a {
   justify-content: center;
   text-decoration: none;
   gap: 2rem;
+  flex-flow: row wrap;
 }
 header #nav-a-1,
 header #nav-a-2 {
@@ -171,6 +170,39 @@ main {
   /* eighth section -photo */
   /* nineth section text */
   /*  tenth section photos*/
+  /*    .tenth-section-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-white;
+    width: 100vw;
+    height: 25rem;
+    max-height: 50rem;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  } */
+  /* .third-colored-box {
+    position: absolute;
+    width: 60vw;
+    height: 20rem;
+    background-color: $box-pink-300;
+    border-radius: 0.1rem;
+  } */
+  /* .right-photo-8 {
+    position: relative;
+    width: 50vw;
+    height: auto;
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 0.1rem;
+  } */
+  /*  .left-photo-7 {
+    position: relative;
+    width: 35vw;
+    height: auto;
+    border-radius: 0.1rem;
+    margin-left: 2rem;
+  } */
   /* eleventh section text */
   /* twelvth section text-photo*/
 }
@@ -184,7 +216,7 @@ main .photo-1 {
   align-self: center;
   justify-content: center;
   width: 80vw;
-  margin: 0 10% 3rem 10%;
+  margin: 0.5rem 10% 3rem 10%;
   height: auto;
   border-radius: 0.1rem;
   box-shadow: 0.05rem 0.05rem 0.1rem rgba(51, 50, 52, 0.5);
@@ -211,8 +243,8 @@ main .second-section-photo {
   justify-content: flex-end;
   background-color: #f5f5f6;
   width: 100vw;
-  height: 50rem;
-  margin: 7rem;
+  height: 40rem;
+  margin: 3rem;
 }
 main .first-colored-box {
   display: flex;
@@ -228,7 +260,7 @@ main .right-photo-2 {
   height: auto;
   padding: 0 2rem 0 0;
   border-radius: 0.1rem;
-  /*  box-shadow: 0.05rem 0.05rem 0.1rem rgba($color: $green-addictional-800, $alpha: 0.5); */
+  box-shadow: 0.05rem 0.05rem 0.1rem rgba(47, 82, 42, 0.5);
 }
 main .left-photo-3 {
   position: absolute;
@@ -257,12 +289,12 @@ main .third-text-p {
 main .fourth-section-video {
   width: 100vw;
   height: auto;
-  min-height: 22rem;
-  margin-bottom: 7rem;
+  /* min-height: 25rem; */
+  margin-bottom: 3rem;
 }
 main .video {
   width: 80%;
-  height: auto;
+  height: 25rem;
   min-height: 22rem;
   margin: 0 10%;
 }
@@ -285,7 +317,7 @@ main .fifth-text-p {
 }
 main .fifth-text-p2 {
   font-size: 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 main .sixth-section-photo {
   display: flex;
@@ -293,7 +325,7 @@ main .sixth-section-photo {
   background-color: #f5f5f6;
   width: 100vw;
   height: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 main .second-colored-box {
   display: flex;
@@ -335,7 +367,7 @@ main .seventh-section-text {
   width: 50%;
   margin: 0 25%;
   flex-wrap: wrap;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 main .seventh-text-h4 {
   font-size: 1.6rem;
@@ -383,39 +415,44 @@ main .nineth-text-p-bottom {
 }
 main .tenth-section-photo {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #f5f5f6;
   width: 100vw;
-  min-height: 30rem;
-  max-height: 45rem;
-  gap: 4rem;
+  height: auto;
+  min-height: 25rem;
   margin: 3rem 0;
 }
 main .third-colored-box {
-  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
   width: 60vw;
-  height: 80%;
-  background-color: #f9a8d6;
+  height: auto;
+  min-height: 45vw;
+  background-color: #eab187;
   border-radius: 0.1rem;
+  gap: 3rem;
 }
 main .right-photo-8 {
-  position: relative;
-  width: 50vw;
+  position: absolute;
+  width: 40vw;
   height: auto;
-  /* min-height: 16rem; */
+  min-height: 30vh;
   max-width: 100%;
+  z-index: 2;
+  left: 55%;
   border-radius: 0.1rem;
-  box-shadow: 0.08rem 0.08rem 0.1rem rgba(218, 40, 124, 0.2);
 }
 main .left-photo-7 {
-  position: relative;
+  position: absolute;
   width: 35vw;
+  min-height: 20vh;
+  max-width: 100%;
   height: auto;
-  /* min-height: 8rem; */
+  right: 55%;
   border-radius: 0.1rem;
-  box-shadow: 0.08rem 0.08rem 0.1rem rgba(218, 40, 124, 0.2);
-  margin-left: 2rem;
 }
 main .eleventh-section-text {
   width: 50%;
@@ -437,8 +474,8 @@ main .twelveth-section-text-photo {
   justify-content: center;
   background-color: #f5f5f6;
   width: 100vw;
-  height: 40rem;
-  margin-bottom: 7rem;
+  height: 30rem;
+  /* margin-bottom: 1rem; */
 }
 main .left-side {
   display: flex;
@@ -496,7 +533,7 @@ main .after-main-hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  width: 80vw;
+  width: 80%;
   margin: 2rem 10%;
   /* h8 div */
   /* all footers */
@@ -629,10 +666,13 @@ main .after-main-hr {
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0 10%;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .bottom-footer .bottom-left-footer {
-  align-self: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 .bottom-footer .a-bottom-footer {
   text-decoration: none;
@@ -717,11 +757,12 @@ main .after-main-hr {
     min-height: 15rem;
   }
   .third-colored-box {
-    max-height: 50%;
+    max-height: 60%;
   }
   .twelveth-section-text-photo {
     flex-direction: column;
-    max-height: 40rem;
+    min-height: 40rem;
+    margin: 3rem 0;
   }
   .photo-9 {
     min-width: 80vw;
@@ -829,6 +870,20 @@ main .after-main-hr {
     min-height: 25rem;
     min-width: 50vw;
   }
+  /* .tenth-section-photo {
+    margin: 3rem 0;
+  } */
+  .twelveth-section-text-photo {
+    flex-direction: column;
+    min-height: 45rem;
+    margin: 2rem 0;
+  }
+  .photo-9 {
+    min-width: 80vw;
+  }
+  .fourth-colored-box {
+    min-width: 80vw;
+  }
   .top-footer {
     display: flex;
     justify-content: center;
@@ -895,7 +950,7 @@ main .after-main-hr {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .nav-list {
     display: none;
   }
@@ -920,11 +975,25 @@ main .after-main-hr {
     display: none;
   }
   .left-photo-3 {
-    min-height: 20rem;
+    min-height: 40rem;
     min-width: 50vw;
   }
+  .fourth-section-video {
+    min-height: 30rem;
+  }
   .video {
-    min-height: 32rem;
+    min-height: 30rem;
+  }
+  .twelveth-section-text-photo {
+    flex-direction: column;
+    min-height: 45rem;
+    margin: 2rem 0;
+  }
+  .photo-9 {
+    min-width: 80vw;
+  }
+  .fourth-colored-box {
+    min-width: 80vw;
   }
   .top-footer {
     display: flex;
@@ -992,4 +1061,50 @@ main .after-main-hr {
   .logo-bottom {
     margin-left: 0;
   }
+}
+@media screen and (min-width: 992px) {
+  /* remove toggle menu */
+  .hamburger-menu {
+    display: none;
+  }
+  .navigation-a {
+    margin: 0 4rem 0 auto;
+  }
+  .tenth-section-photo {
+    min-height: 35rem;
+  }
+  .third-colored-box {
+    padding: 5rem;
+    min-height: 80vh;
+  }
+  .top-footer {
+    margin-right: 20%;
+  }
+  .ft-5-p {
+    max-width: 25rem;
+  }
+  .input-form {
+    max-width: 25rem;
+  }
+  .sign-up-intup {
+    max-width: 15rem;
+  }
+  .sign-up-btn {
+    max-width: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-a {
+    margin: 0 5rem 0 auto;
+  }
+  .left-photo-3 {
+    min-height: 0rem;
+  }
+  /*  .third-colored-box  {
+    min-height: 28rem;
+    margin: 2rem;
+  } */
+  /*  .tenth-section-photo {
+    margin: 3rem 0;
+  } */
 }/*# sourceMappingURL=style.css.map */
