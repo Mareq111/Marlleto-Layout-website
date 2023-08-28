@@ -5,11 +5,11 @@ const toggleMenu = document.querySelector(".toggle-menu");
 const caretIcon = document.querySelector(".fa-caret-up");
 
 hamburgerMenu?.addEventListener("click", function () {
-  if (toggleMenu.style.display == "block") {
-    toggleMenu.style.display = "none";
-    caretIcon.classList.remove("click-rotate");
-  } else {
-    toggleMenu.style.display = "block";
+  if (toggleMenu) {
+    toggleMenu.classList.toggle("active");
+
+    if (caretIcon) {
+      caretIcon.classList.toggle("click-rotate");
+    }
   }
-  caretIcon.classList.toggle("click-rotate");
 });

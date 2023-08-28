@@ -118,6 +118,9 @@ header {
     z-index: 2;
     transition: ease-in 2s;
   }
+  .toggle-menu.active {
+    display: block;
+  }
   .toggle-a {
     font-size: 1.2rem;
     color: $green-addictional-50;
@@ -826,6 +829,7 @@ main {
     padding-left: 0.3rem;
     font-size: 0.9rem;
     transition: ease 0s;
+
     &.click-rotate {
       padding-right: 0.3rem;
       transform: rotate(180deg);
