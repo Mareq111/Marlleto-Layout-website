@@ -1,4 +1,4 @@
-﻿[Check out this project on Netlify](https://marletto-layout-portfolio.netlify.app/) 
+[Check out this project on Netlify](https://marletto-layout-portfolio.netlify.app/) 
 
 
 
