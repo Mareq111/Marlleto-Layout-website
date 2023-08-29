@@ -1,2 +1,5 @@
-﻿# Marlleto-Layout-website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aa8249f0-3010-4d70-895e-fd21ce6861fb/deploy-status)](https://app.netlify.com/sites/marletto-layout-portfolio/deploys)
+﻿[Check out this project on Netlify](https://marletto-layout-portfolio.netlify.app/) 
+
+
+
+# Marlleto-Layout-website
