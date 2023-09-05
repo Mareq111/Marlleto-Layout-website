@@ -31,7 +31,7 @@ html {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 19vh;
   font-weight: 500;
   z-index: 3;
@@ -159,7 +159,7 @@ header {
   /* bottom navigation */
   .bottom-navigation-only {
     height: 49.8%;
-    width: 100%;
+    width: 100vw;
   }
 
   .bottom-nav-ul {
@@ -790,6 +790,9 @@ main {
 }
 /* media quieres  for maller screens than 400px*/
 @media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
   // only text sections in main
 
   // 1 section text
