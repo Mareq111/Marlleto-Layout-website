@@ -306,7 +306,7 @@ main {
 
   .video-container {
     position: relative;
-    height: 6rem;
+    /* min-height: 16rem; */
   }
 
   .video {
@@ -788,8 +788,8 @@ main {
     cursor: pointer;
   }
 }
-/* media quieres  320px*/
-@media screen and (max-width: 320px) {
+/* media quieres  for maller screens than 400px*/
+@media screen and (max-width: 400px) {
   // only text sections in main
 
   // 1 section text
@@ -845,8 +845,11 @@ main {
   }
 
   // viedo section
-  .fourth-section-video {
+  /* .fourth-section-video {
     min-height: 14rem;
+  } */
+  .video-container {
+    min-height: 12rem;
   }
   //footer
   .fourth-colored-box {
@@ -867,7 +870,7 @@ main {
     max-width: 8rem;
   }
 }
-
+//media q for max 576px
 @media screen and (max-width: 576px) {
   /* top navigation */
   .nav-list {
@@ -907,10 +910,14 @@ main {
     align-items: center;
     justify-content: center;
   }
+
   .first-section-text {
     width: 60%;
   }
   /* second photos */
+  .video-container {
+    min-height: 18rem;
+  }
   .second-section-photo {
     max-height: 25rem;
   }
@@ -980,7 +987,6 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-
     flex-direction: column;
   }
   .bottom-left-footer {
@@ -1046,9 +1052,6 @@ main {
     min-height: 25rem;
     min-width: 50vw;
   }
-  /* .tenth-section-photo {
-    margin: 3rem 0;
-  } */
   .twelveth-section-text-photo {
     flex-direction: column;
     min-height: 45rem;
@@ -1157,12 +1160,7 @@ main {
     min-height: 40rem;
     min-width: 50vw;
   }
-  .fourth-section-video {
-    min-height: 30rem;
-  }
-  .video {
-    min-height: 30rem;
-  }
+
   .twelveth-section-text-photo {
     flex-direction: column;
     min-height: 45rem;
@@ -1273,6 +1271,12 @@ main {
   .sign-up-btn {
     max-width: 5rem;
   }
+  .video-container {
+    min-height: 30rem;
+  }
+  .fig-text {
+    font-size: 1.2rem !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1282,6 +1286,10 @@ main {
   .photo-9 {
     max-height: 20rem;
   }
-}
-@media screen and (min-width: 1400px) {
+  .video-container {
+    min-height: 33rem;
+  }
+  .second-section-photo {
+    min-height: 45rem;
+  }
 }

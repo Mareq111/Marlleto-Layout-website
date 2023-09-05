@@ -269,7 +269,7 @@ main .fourth-section-video {
 }
 main .video-container {
   position: relative;
-  height: 6rem;
+  /* min-height: 16rem; */
 }
 main .video {
   position: absolute;
@@ -688,8 +688,8 @@ main .after-main-hr {
   cursor: pointer;
 }
 
-/* media quieres  320px*/
-@media screen and (max-width: 320px) {
+/* media quieres  for maller screens than 400px*/
+@media screen and (max-width: 400px) {
   main .first-section-text {
     width: 80%;
   }
@@ -733,8 +733,11 @@ main .after-main-hr {
   main .second-section-photo {
     max-height: 16rem;
   }
-  .fourth-section-video {
+  /* .fourth-section-video {
     min-height: 14rem;
+  } */
+  .video-container {
+    min-height: 12rem;
   }
   .fourth-colored-box {
     padding: 2rem 0;
@@ -792,6 +795,9 @@ main .after-main-hr {
     width: 60%;
   }
   /* second photos */
+  .video-container {
+    min-height: 18rem;
+  }
   .second-section-photo {
     max-height: 25rem;
   }
@@ -924,9 +930,6 @@ main .after-main-hr {
     min-height: 25rem;
     min-width: 50vw;
   }
-  /* .tenth-section-photo {
-    margin: 3rem 0;
-  } */
   .twelveth-section-text-photo {
     flex-direction: column;
     min-height: 45rem;
@@ -1031,12 +1034,6 @@ main .after-main-hr {
   .left-photo-3 {
     min-height: 40rem;
     min-width: 50vw;
-  }
-  .fourth-section-video {
-    min-height: 30rem;
-  }
-  .video {
-    min-height: 30rem;
   }
   .twelveth-section-text-photo {
     flex-direction: column;
@@ -1146,6 +1143,12 @@ main .after-main-hr {
   .sign-up-btn {
     max-width: 5rem;
   }
+  .video-container {
+    min-height: 30rem;
+  }
+  .fig-text {
+    font-size: 1.2rem !important;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navigation-a {
@@ -1153,5 +1156,11 @@ main .after-main-hr {
   }
   .photo-9 {
     max-height: 20rem;
+  }
+  .video-container {
+    min-height: 33rem;
+  }
+  .second-section-photo {
+    min-height: 45rem;
   }
 }/*# sourceMappingURL=style.css.map */
