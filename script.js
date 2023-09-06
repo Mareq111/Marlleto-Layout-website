@@ -1,4 +1,4 @@
-/* toggle menu for 576px , 768px , 992px */
+/* toggle menu for screens < 991px */
 
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const toggleMenu = document.querySelector(".toggle-menu");
@@ -15,7 +15,7 @@ hamburgerMenu?.addEventListener("click", function () {
 });
 
 // show menu when scroll up , hide menu when scroll down
-/* const headerNavigation = document.querySelector("header");
+const headerNavigation = document.querySelector("header");
 
 if (headerNavigation) {
   let prevScrollPos = window.scrollY;
@@ -34,4 +34,4 @@ if (headerNavigation) {
     headerNavigation.style.top = isScrollingUp ? "0" : "2rem";
     headerNavigation.style.opacity = isScrollingUp ? "1" : "0";
   });
-} */
+}

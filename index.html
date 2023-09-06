@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marletto created by Marek Szulc, inspired by Ableton website"
+    />
     <title>Marlleto-RECREATED-layout</title>
     <link rel="stylesheet" href="/css/style.css" />
 
@@ -18,7 +22,7 @@
       <div></div>
       <nav class="top-navigation-only">
         <!-- logo -->
-        <img class="logo" src="img/Property 1=start.png" alt="logo" />
+        <img class="logo" src="/img/Property 1=start.png" alt="logo" />
 
         <!-- first navigation -->
         <ul class="top-nav-ul" id="top-nav">
@@ -33,14 +37,16 @@
             More <strong>+</strong>
           </li>
         </ul>
-        <span class="hamburger-menu" onclick="toggleMenu()">
+        <span class="hamburger-menu">
           <h12 class="menu">Menu</h12>
           <i class="fa-solid fa-caret-up click-rotate"></i
         ></span>
         <!-- toggle menu  -->
         <nav class="toggle-menu">
           <div class="all-inside">
-            <div class="toggle-column">
+            <div class="toggle-column-left">
+              <a class="toggle-a" href="#">Try for free</a>
+              <a class="toggle-a" id="loginToggle" href="#">Log in or register</a>
               <a class="toggle-a" href="#">Live</a>
               <a class="toggle-a" href="#">Push</a>
               <a class="toggle-a" href="#">Note</a>
@@ -48,19 +54,9 @@
               <a class="toggle-a" href="#">Shop</a>
               <a class="toggle-a" href="#">Packs</a>
               <a class="toggle-a" href="#">Help</a>
-              <a class="toggle-a" href="#">Try for free</a>
-              <p>Log in or register</p>
-              <a class="toggle-a" href="#">More on Marletto dot kom</a>
-              <p>Blog</p>
-              <p>Marletto for the Classroom</p>
-              <p>Marletto for Colleges and Universities</p>
-              <p>Certified Training</p>
-              <p>About Marletto</p>
-              <p>Jobs</p>
-              <p>Apprenticeships</p>
-              <a class="toggle-a" href="#">More from Marletto:</a>
-            </div>
-            <div class="toggle-row">
+              <a class="toggle-a" href="#">More <strong>+</strong></a>
+              </div>
+              <div class="toggle-column-right">
               <ul class="toggle-row-ul">
                 <li class="toggle-li">
                   <h1 class="toggle-h">Loop</h1>
@@ -81,6 +77,7 @@
               </ul>
             </div>
           </div>
+          
         </nav>
         <div class="navigation-a">
           <a class="nav-a" id="nav-a-1" href="#">Try Live for free</a>
@@ -116,11 +113,11 @@
 
       <div class="first-section-text">
         <h1 class="first-text-h1">
-          We make <a class="first-text-a">Live</a>,
-          <a class="first-text-a">Push</a> and <a class="first-text-a">Link</a>—
-          Our cutting-edge software and hardware enable exceptional music
-          creation and performance. Empowering our vibrant user community to
-          achieve remarkable feats of creativity.
+          We make <span class="first-text-a">Live</span>,
+          <span class="first-text-a">Push</span> and
+          <span class="first-text-a">Link</span>— Our cutting-edge software and
+          hardware enable exceptional music creation and performance. Empowering
+          our vibrant user community to achieve remarkable feats of creativity.
         </h1>
         <p class="first-text-p">
           Marlleto was founded in 2019 and released Live in 2023. Our products
@@ -132,14 +129,14 @@
       <div class="second-section-photo">
         <img
           class="left-photo-3"
-          src="img/pexels-roberto-nickson-7238759.jpg"
+          src="/img/pexels-roberto-nickson-7238759.jpg"
           loading="lazy"
           alt="modern-music-studio"
         />
         <div class="first-colored-box">
           <img
             class="right-photo-2"
-            src="img/pexels-brett-sayles-3990847.jpg"
+            src="/img/pexels-brett-sayles-3990847.jpg"
             loading="lazy"
             alt="music-studio-with-someone"
           />
@@ -203,21 +200,21 @@
         <div class="second-colored-box">
           <img
             class="left-top-photo-4"
-            src="img\pexels-helena-lopes-1015568 (2).jpg"
+            src="/img/pexels-helena-lopes-1015568 (2).jpg"
             loading="lazy"
             alt="mens sitting and talking"
           />
 
           <img
             class="left-bottom-photo-5"
-            src="img\pexels-fauxels-3182787.jpg"
+            src="/img/pexels-fauxels-3182787.jpg"
             loading="lazy"
             alt="wise guys going somewhere"
           />
         </div>
         <img
           class="right-photo-6 imag"
-          src="img\pexels-anna-pou-8132977.jpg"
+          src="/img/pexels-anna-pou-8132977.jpg"
           loading="lazy"
           alt="music-producer-in-studio"
         />
@@ -246,7 +243,7 @@
       <div class="eighth-section-photo">
         <img
           class="photo-7"
-          src="img\pexels-pixabay-164745.jpg"
+          src="/img/pexels-pixabay-164745.jpg"
           loading="lazy"
           alt="music-producer-console"
         />
@@ -277,14 +274,14 @@
       <div class="tenth-section-photo">
         <img
           class="left-photo-7"
-          src="img\pexels-tirachard-kumtanom-601170.jpg"
+          src="/img/pexels-tirachard-kumtanom-601170.jpg"
           loading="lazy"
           alt="women-thinking-mayby-now"
         />
         <div class="third-colored-box"></div>
         <img
           class="right-photo-8"
-          src="img\pexels-christina-morillo-1181533.jpg"
+          src="/img/pexels-christina-morillo-1181533.jpg"
           loading="lazy"
           alt="women-discuss-about-projects"
         />
@@ -310,7 +307,7 @@
         <div class="left-side">
           <img
             class="photo-9"
-            src="img\pexels-marc-mueller-380768.jpg"
+            src="/img/pexels-marc-mueller-380768.jpg"
             loading="lazy"
             alt="office"
           />
@@ -462,7 +459,7 @@
             <p id="p-2-footer">2023</p>
           </div>
           <!-- logo -->
-          <img class="logo-bottom" src="img/Property 1=start.png" alt="logo" />
+          <img class="logo-bottom" src="/img/Property 1=start.png" alt="logo" />
         </div>
       </div>
     </footer>

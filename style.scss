@@ -111,49 +111,74 @@ header {
   .toggle-menu {
     display: none;
     position: absolute;
-    transform: translateY(52%);
+    transform: translateY(55%);
     width: 100vw;
-    height: 80rem;
+    height: auto;
+    min-height: 30vw;
     background-color: $blue-ocean-700;
     color: $green-addictional-50;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     z-index: 2;
     transition: ease-in 2s;
   }
+
   .toggle-menu.active {
     display: block;
   }
-  .toggle-a {
-    font-size: 1.2rem;
-    color: $green-addictional-50;
-    text-decoration: none;
+
+  .all-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
-  .toggle-column {
+
+  .toggle-column-left {
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 2rem;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 40vw;
   }
+
+  .toggle-a {
+    font-size: 1rem;
+    color: $background-white;
+    text-decoration: none;
+    max-width: 100%;
+  }
+
+  #loginToggle {
+    font-size: 0.8rem;
+    color: $green-addictional-50;
+  }
+
   .toggle-h {
+    border-bottom: $box-red-300 solid 0.1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
     font-size: 1.1rem;
-    margin: 0 10%;
+    margin: 0;
     margin-bottom: 0.5rem;
+    cursor: pointer;
   }
+
   .toggle-p {
-    margin: 0 10%;
+    font-size: 0.8rem;
   }
-  .toggle-li {
-    height: auto;
-    width: 15rem;
-  }
+
   .toggle-row-ul {
+    width: 60%;
     display: flex;
-    justify-content: space-evenly;
     align-items: flex-start;
-    flex-direction: row;
-    height: auto;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    flex-flow: column nowrap;
+    gap: 1.5rem;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   /* bottom navigation */
@@ -204,6 +229,7 @@ main {
     align-items: center;
     width: 100vw;
   }
+
   .photo-1 {
     align-self: center;
     justify-content: center;
@@ -319,6 +345,7 @@ main {
     font-size: 0.8rem;
     margin: 0 10%;
   }
+
   /* fifth section text */
   .fifth-section-text {
     width: 50%;
@@ -336,6 +363,7 @@ main {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+
   .fifth-text-p2 {
     font-size: 1rem;
     margin-bottom: 3rem;
@@ -363,6 +391,7 @@ main {
     padding: 3rem;
     gap: 3rem;
   }
+
   .right-photo-6 {
     position: absolute;
     width: 45vw;
@@ -410,6 +439,7 @@ main {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+
   .seventh-text-p2 {
     font-size: 1rem;
   }
@@ -422,6 +452,7 @@ main {
     margin-bottom: 7rem;
     width: 100vw;
   }
+
   .photo-7 {
     width: 80vw;
     height: auto;
@@ -465,6 +496,7 @@ main {
     height: auto;
     margin: 3rem 0;
   }
+
   .third-colored-box {
     display: flex;
     align-items: flex-start;
@@ -477,6 +509,7 @@ main {
     border-radius: 0.1rem;
     gap: 3rem;
   }
+
   .right-photo-8 {
     position: absolute;
     width: 40vw;
@@ -488,6 +521,7 @@ main {
     border-radius: 0.1rem;
     object-fit: contain;
   }
+
   .left-photo-7 {
     position: absolute;
     width: 35vw;
@@ -498,6 +532,7 @@ main {
     border-radius: 0.1rem;
     object-fit: cover;
   }
+
   /* eleventh section text */
   .eleventh-section-text {
     width: 50%;
@@ -526,6 +561,7 @@ main {
     height: 30rem;
     /* margin-bottom: 1rem; */
   }
+
   .left-side {
     display: flex;
     align-items: center;
@@ -568,6 +604,7 @@ main {
     color: $blue-ocean-700;
     text-decoration: none;
     transition: linear 0.3s;
+
     &:hover {
       color: $blue-ocean-500;
     }
@@ -625,15 +662,18 @@ main {
   .ft-6 {
     grid-row: 3;
   }
+
   .ft-4 {
     display: flex;
     flex-direction: column;
   }
+
   .ft-4-inside {
     display: flex;
     flex-direction: row;
     gap: 0.1rem;
   }
+
   #location-chooser,
   #language-chooser {
     border: 0;
@@ -648,6 +688,7 @@ main {
   #language-chooser {
     width: 7rem;
   }
+
   #location-chooser {
     width: 10rem;
   }
@@ -788,31 +829,42 @@ main {
     cursor: pointer;
   }
 }
+
 /* media quieres  for maller screens than 400px*/
 @media screen and (max-width: 400px) {
   body {
     overflow-x: hidden;
   }
+
+  .toggle-column-right {
+    padding: 0 1rem 0 0;
+  }
+
   // only text sections in main
 
   // 1 section text
   main .first-section-text {
     width: 80%;
   }
+
   .first-text-h1 {
     font-size: 1.2rem;
   }
+
   //3 section -text
   main .third-section-text {
     width: 80%;
   }
+
   .third-text-h2 {
     font-size: 1.2rem;
   }
+
   /* fifth section text */
   main .fifth-section-text {
     width: 80%;
   }
+
   .fifth-text-h3 {
     font-size: 1.2rem;
   }
@@ -821,13 +873,16 @@ main {
   main .seventh-section-text {
     width: 80%;
   }
+
   .seventh-text-h4 {
     font-size: 1.2rem;
   }
+
   /* nineth section text */
   main .nineth-section-text {
     width: 80%;
   }
+
   .nineth-text-h5 {
     font-size: 1.2rem;
   }
@@ -854,10 +909,12 @@ main {
   .video-container {
     min-height: 12rem;
   }
+
   //footer
   .fourth-colored-box {
     padding: 2rem 0;
   }
+
   //footer elements
   .ft-5-p {
     max-width: 16rem;
@@ -866,27 +923,33 @@ main {
   .top-footer .input-form {
     width: 55%;
   }
+
   .top-footer .sign-up-btn {
     width: 35%;
   }
+
   #location-chooser {
     max-width: 8rem;
   }
 }
+
 //media q for max 576px
 @media screen and (max-width: 576px) {
   /* top navigation */
   .nav-list {
     display: none;
   }
+
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
     cursor: pointer;
   }
+
   .menu {
     font-size: 1.1rem;
   }
+
   .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
@@ -901,6 +964,7 @@ main {
   .logo {
     margin-left: 1.5rem;
   }
+
   .bottom-navigation-only {
     width: 100vw;
   }
@@ -908,6 +972,14 @@ main {
   .bottom-nav-ul {
     padding: 0 1.5rem;
   }
+
+  /* .toggle-column-left {
+    padding-left: 1rem;
+    width: 50vw;
+  }
+  .toggle-row-ul {
+    width: 50vw;
+  } */
   main {
     display: flex;
     align-items: center;
@@ -917,42 +989,54 @@ main {
   .first-section-text {
     width: 60%;
   }
+
   /* second photos */
   .video-container {
     min-height: 18rem;
   }
+
   .second-section-photo {
     max-height: 25rem;
   }
+
   .right-photo-2 {
     min-height: 5rem;
   }
+
   .left-photo-3 {
     min-width: 50vw;
   }
+
   .right-photo-6 {
     min-height: 15rem;
   }
+
   .left-photo-7 {
     min-height: 8rem;
   }
+
   .right-photo-8 {
     min-height: 15rem;
   }
+
   .third-colored-box {
     max-height: 60%;
   }
+
   .twelveth-section-text-photo {
     flex-direction: column;
     min-height: 40rem;
     margin: 3rem 0;
   }
+
   .photo-9 {
     min-width: 80vw;
   }
+
   .fourth-colored-box {
     min-width: 80vw;
   }
+
   .top-footer {
     display: flex;
     justify-content: center;
@@ -960,44 +1044,54 @@ main {
     flex-direction: column;
     margin: 3rem 10%;
   }
+
   .sign-up-input {
     max-width: 20rem;
   }
+
   .sign-up-btn {
     max-width: 6rem;
   }
+
   /* sign up */
   .ft-5 {
     order: 1;
   }
+
   /* socials */
   .ft-1 {
     order: 2;
   }
+
   /* education */
   .ft-3 {
     order: 3;
   }
+
   /* commiunity */
   .ft-2 {
     order: 4;
   }
+
   /* language */
   .ft-4 {
     order: 5;
   }
+
   .bottom-footer {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
   }
+
   .bottom-left-footer {
     display: flex;
     justify-content: flex-start;
     align-items: left;
     flex-direction: column;
   }
+
   .bottom-right-footer {
     display: flex;
     justify-content: center;
@@ -1006,37 +1100,45 @@ main {
     margin-top: 1rem;
     padding: 0.5rem;
   }
+
   .p-elements-right-ft {
     justify-content: center;
     align-items: flex-start;
     max-width: 15rem;
   }
+
   #p-2-footer {
     align-self: flex-start;
     padding: 0.5rem 0;
   }
+
   .logo-bottom {
     margin-left: 0;
   }
 }
+
 /* media quieres  768px*/
 @media screen and (max-width: 768px) {
   /* top navigation */
   .nav-list {
     display: none;
   }
+
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
     cursor: pointer;
   }
+
   .menu {
     font-size: 1.1rem;
   }
+
   .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
     transition: ease 0s;
+
     &.click-rotate {
       padding-right: 0.3rem;
       transform: rotate(180deg);
@@ -1051,21 +1153,26 @@ main {
   .second-section-photo {
     max-height: 30rem;
   }
+
   .left-photo-3 {
     min-height: 25rem;
     min-width: 50vw;
   }
+
   .twelveth-section-text-photo {
     flex-direction: column;
     min-height: 45rem;
     margin: 2rem 0;
   }
+
   .photo-9 {
     min-width: 80vw;
   }
+
   .fourth-colored-box {
     min-width: 80vw;
   }
+
   .top-footer {
     display: flex;
     justify-content: center;
@@ -1073,32 +1180,40 @@ main {
     flex-direction: column;
     margin: 3rem 10%;
   }
+
   .sign-up-input {
     max-width: 30rem;
   }
+
   .sign-up-btn {
     max-width: 10rem;
   }
+
   /* sign up */
   .ft-5 {
     order: 1;
   }
+
   /* socials */
   .ft-1 {
     order: 2;
   }
+
   /* education */
   .ft-3 {
     order: 3;
   }
+
   /* commiunity */
   .ft-2 {
     order: 4;
   }
+
   /* language */
   .ft-4 {
     order: 5;
   }
+
   .bottom-footer {
     display: flex;
     align-items: flex-start;
@@ -1106,12 +1221,14 @@ main {
 
     flex-direction: column;
   }
+
   .bottom-left-footer {
     display: flex;
     justify-content: flex-start;
     align-items: left;
     flex-direction: column;
   }
+
   .bottom-right-footer {
     display: flex;
     justify-content: center;
@@ -1120,31 +1237,38 @@ main {
     margin-top: 1rem;
     padding: 0.5rem;
   }
+
   .p-elements-right-ft {
     justify-content: center;
     align-items: flex-start;
     max-width: 15rem;
   }
+
   #p-2-footer {
     align-self: flex-start;
     padding: 0.5rem 0;
   }
+
   .logo-bottom {
     margin-left: 0;
   }
 }
+
 @media screen and (max-width: 991px) {
   .nav-list {
     display: none;
   }
+
   .hamburger-menu {
     position: absolute;
     margin: 6rem;
     cursor: pointer;
   }
+
   .menu {
     font-size: 1.1rem;
   }
+
   .fa-caret-up {
     padding-left: 0.3rem;
     font-size: 0.9rem;
@@ -1155,6 +1279,7 @@ main {
       transform: rotate(180deg);
     }
   }
+
   .nav-a {
     display: none;
   }
@@ -1169,12 +1294,15 @@ main {
     min-height: 45rem;
     margin: 2rem 0;
   }
+
   .photo-9 {
     min-width: 80vw;
   }
+
   .fourth-colored-box {
     min-width: 80vw;
   }
+
   .top-footer {
     display: flex;
     justify-content: center;
@@ -1183,28 +1311,35 @@ main {
     margin: 3rem 10%;
     max-width: 100%;
   }
+
   .sign-up-input {
     max-width: 30rem;
   }
+
   .sign-up-btn {
     max-width: 10rem;
   }
+
   /* sign up */
   .ft-5 {
     order: 1;
   }
+
   /* socials */
   .ft-1 {
     order: 2;
   }
+
   /* education */
   .ft-3 {
     order: 3;
   }
+
   /* commiunity */
   .ft-2 {
     order: 4;
   }
+
   /* language */
   .ft-4 {
     order: 5;
@@ -1216,12 +1351,14 @@ main {
     justify-content: flex-start;
     flex-direction: column;
   }
+
   .bottom-left-footer {
     display: flex;
     justify-content: flex-start;
     align-items: left;
     flex-direction: column;
   }
+
   .bottom-right-footer {
     display: flex;
     justify-content: center;
@@ -1230,15 +1367,18 @@ main {
     margin-top: 1rem;
     padding: 0.5rem;
   }
+
   .p-elements-right-ft {
     justify-content: center;
     align-items: flex-start;
     max-width: 15rem;
   }
+
   #p-2-footer {
     align-self: flex-start;
     padding: 0.5rem 0;
   }
+
   .logo-bottom {
     margin-left: 0;
   }
@@ -1249,34 +1389,44 @@ main {
   .hamburger-menu {
     display: none;
   }
+
   .navigation-a {
     margin: 0 4rem 0 auto;
   }
+
   .tenth-section-photo {
     min-height: 35rem;
   }
+
   .third-colored-box {
     padding: 5rem;
     min-height: 80vh;
   }
+
   .top-footer {
     margin-right: 20%;
   }
+
   .ft-5-p {
     max-width: 25rem;
   }
+
   .input-form {
     max-width: 25rem;
   }
+
   .sign-up-intup {
     max-width: 15rem;
   }
+
   .sign-up-btn {
     max-width: 5rem;
   }
+
   .video-container {
     min-height: 30rem;
   }
+
   .fig-text {
     font-size: 1.2rem !important;
   }
@@ -1286,12 +1436,15 @@ main {
   .navigation-a {
     margin: 0 5rem 0 auto;
   }
+
   .photo-9 {
     max-height: 20rem;
   }
+
   .video-container {
     min-height: 33rem;
   }
+
   .second-section-photo {
     min-height: 45rem;
   }
