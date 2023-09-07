@@ -16,7 +16,7 @@ html {
 
 header {
   width: 100vw;
-  height: 19vh;
+  height: 20vh; /* % zamiast vh */
   font-weight: 500;
   z-index: 3;
   background-color: #f5f5f6;
@@ -182,6 +182,8 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  height: auto;
+  margin-top: 20vh;
   /* first section text  */
   /* second section - photos */
   /* thrid section text */
@@ -200,13 +202,16 @@ main .zero-section-photo {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 60vw;
+  margin: 1rem 0 3rem 0;
 }
 main .photo-1 {
+  display: flex;
   align-self: center;
   justify-content: center;
   width: 80vw;
-  margin: 0.5rem 10% 3rem 10%;
   height: auto;
+  min-height: 8rem;
   border-radius: 0.1rem;
   box-shadow: 0.05rem 0.05rem 0.1rem rgba(51, 50, 52, 0.5);
   object-fit: cover;
@@ -279,23 +284,36 @@ main .third-text-p {
   margin-bottom: 3rem;
 }
 main .fourth-section-video {
-  height: auto;
+  background-color: #f3f7f2;
   width: 80%;
   margin: 0 10%;
-  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 main .video-container {
-  position: relative;
-  /* min-height: 16rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
 }
 main .video {
-  position: absolute;
   width: 100%;
   height: 100%;
 }
 main .fig-text {
+  width: 80vw;
   font-size: 0.8rem;
-  margin: 0 10%;
+  margin: 0.5rem 10% 3rem 20%;
+  z-index: 3;
+  font-style: italic;
+  z-index: 3;
+}
+main #fig-text-span {
+  font-weight: 500;
 }
 main .fifth-section-text {
   width: 50%;
@@ -357,6 +375,7 @@ main .left-bottom-photo-5 {
   width: 35vw;
   max-width: 100%;
   height: auto;
+  min-height: 4rem;
   border-radius: 0.1rem;
   box-shadow: 0.08rem 0.08rem 0.1rem rgba(203, 83, 43, 0.2);
   object-fit: cover;
@@ -713,6 +732,9 @@ main .after-main-hr {
   .toggle-column-right {
     padding: 0 1rem 0 0;
   }
+  main .zero-section-photo {
+    margin: 0.5rem 0 3rem 0;
+  }
   main .first-section-text {
     width: 80%;
   }
@@ -759,9 +781,9 @@ main .after-main-hr {
   /* .fourth-section-video {
     min-height: 14rem;
   } */
-  .video-container {
+  /*   .video-container {
     min-height: 12rem;
-  }
+  } */
   .fourth-colored-box {
     padding: 2rem 0;
   }
@@ -809,13 +831,6 @@ main .after-main-hr {
   .bottom-nav-ul {
     padding: 0 1.5rem;
   }
-  /* .toggle-column-left {
-    padding-left: 1rem;
-    width: 50vw;
-  }
-  .toggle-row-ul {
-    width: 50vw;
-  } */
   main {
     display: flex;
     align-items: center;
@@ -825,9 +840,9 @@ main .after-main-hr {
     width: 60%;
   }
   /* second photos */
-  .video-container {
+  /*  .video-container {
     min-height: 18rem;
-  }
+  } */
   .second-section-photo {
     max-height: 25rem;
   }
@@ -1173,11 +1188,8 @@ main .after-main-hr {
   .sign-up-btn {
     max-width: 5rem;
   }
-  .video-container {
-    min-height: 30rem;
-  }
-  .fig-text {
-    font-size: 1.2rem !important;
+  main .fig-text {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1186,9 +1198,6 @@ main .after-main-hr {
   }
   .photo-9 {
     max-height: 20rem;
-  }
-  .video-container {
-    min-height: 33rem;
   }
   .second-section-photo {
     min-height: 45rem;
